@@ -1,0 +1,12 @@
+{
+  "_comment": "Use relative paths and environment variables where possible",
+
+  "output_dir": "output",
+  "wrapped_html": "wrapped.html",
+  "music_folder": "music",
+
+  "SPOTIFY_CLIENT_ID": "${SPOTIFY_CLIENT_ID}",
+  "SPOTIFY_CLIENT_SECRET": "${SPOTIFY_CLIENT_SECRET}",
+
+  "MUSIC_BRAINZ_USER_AGENT": "MusicLibraryScript/1.0 (your@email.com)"
+}
