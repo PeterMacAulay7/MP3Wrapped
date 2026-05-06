@@ -48,12 +48,14 @@ You will need API access for metadata:
 * Open `config.json` in the root directory
 * Add your API credentials
 * Set the path to your music folder (or place your music inside the provided folder)
+* go to your .rockbox folder on your mp3 player and find the playback.log file. Put the .log file into the raw folder in the root MP3Wrapped folder. All .log files will move to the processed folder after runtime where they can stay for archival purposes.
+> Note: if you do not have logging turned on, on your mp3 player, then this program will not given you any data, you will need to have it turned on, and listen to some music before running the progrm. To turn on logging go to: Settings → Playback Settings → Logging → Yes
 
 ### 4. Run the Program
 
 * Run `MP3Wrapped.bat`
 
-> Note: The first run may take longer as the program catalogs your music. Future runs are significantly faster due to caching.
+> Note: The first run will take much longer than usual as the program catalogs your music. Future runs are significantly faster due to caching.
 
 ---
 
