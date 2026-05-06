@@ -2,7 +2,7 @@
   "_comment": "Use relative paths and environment variables where possible",
 
   "output_dir": "output",
-  "wrapped_html": "wrapped.html",
+  "wrapped_html": "output/wrapped.html",
   "music_folder": "music",
 
   "SPOTIFY_CLIENT_ID": "${SPOTIFY_CLIENT_ID}",
