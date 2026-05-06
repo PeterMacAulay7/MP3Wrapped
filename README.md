@@ -1,21 +1,81 @@
 # MP3Wrapped
-This year I stopped streaming music, and switched to using an MP3 player. I did this for quite a few reasons but I didn't like the morals a certain companies, and I found the limitlessness of streaming to be a bit diminutive to my music listening experience. One thing I did like is the Wrapped, So I created my own for MP3 players running Rockbox
 
-# Setup
-- Download the 'MP3Wrapped.zip' folder from github, then unzip the folder
-- go to https://musicbrainz.org/register and make an account, from there you can generate an api key
-- then go to https://developer.spotify.com/documentation/web-api to get a 'CLIENT_ID' and 'CLIENT_SECRET'
-- Open the 'config.json' file in the root of the MP3Wrapped folder and edit the evironment variable for with the keys you just got
-  - I went with two databases because I found music brainz would sometimes fail, and while I'm no spotify fan, having their database as a backup leads to albums being identified with no problems. Think of it as taking from their database.
-- Depending on where your actual music files are located, either edit the path for 'music' in the 'config.json' file, or put all your music into the music folder in the root of the MP3Wrapped folder.
-- Double click the MP3Wrapped.bat file and you should be all done.
-- The first time you run the program it will likely take a long time because it has to catalogue all your music, but subsequent times will run far, far faster. It skips the processing entirely, only double checking if new albums have been added.
-- When the program has finished running it will automatically open the newly generated wrapped.html file
+MP3Wrapped is a tool that generates a **Spotify Wrapped–style summary** for users of MP3 players running Rockbox. It provides listening insights for locally stored music, allowing users to analyze their habits without relying on streaming platforms.
 
-# Note
-- This project is still in development, so please let me know if there is anything wrong. I know that there are things to improve, but it's just me working on this so I definitely missed things
+---
 
-# Example Wrapped
+## Features
+
+* Parses Rockbox listening history logs
+* Generates Spotify Wrapped–style summaries (top artists, albums, listening trends)
+* Integrates with external APIs for metadata enrichment
+* Uses a fallback system for improved reliability
+* Caches processed data for faster subsequent runs
+* Outputs an interactive HTML report
+
+---
+
+## How It Works
+
+MP3Wrapped processes listening history data from Rockbox and builds a structured dataset of your music activity. It then:
+
+1. Parses and aggregates listening data
+2. Enriches metadata using external APIs
+3. Generates a formatted HTML summary
+
+The result is a visual, easy-to-navigate “Wrapped”-style report for your local music library.
+
+---
+
+## Setup
+
+### 1. Download the Project
+
+* Download the repository as a `.zip` file and extract it
+
+### 2. Create API Accounts
+
+You will need API access for metadata:
+
+* Register at https://musicbrainz.org/register
+* Visit https://developer.spotify.com/documentation/web-api to obtain:
+
+  * `CLIENT_ID`
+  * `CLIENT_SECRET`
+
+### 3. Configure the Project
+
+* Open `config.json` in the root directory
+* Add your API credentials
+* Set the path to your music folder (or place your music inside the provided folder)
+
+### 4. Run the Program
+
+* Run `MP3Wrapped.bat`
+
+> Note: The first run may take longer as the program catalogs your music. Future runs are significantly faster due to caching.
+
+---
+
+## Output
+
+After execution, the program generates a `wrapped.html` file that automatically opens in your browser. This file contains your personalized listening summary.
+
+---
+
+## API Design
+
+MP3Wrapped uses a dual-source approach for metadata:
+
+* **Primary:** MusicBrainz API
+* **Fallback:** Spotify API
+
+This improves reliability and ensures more complete album and artist data when one source is missing information.
+
+---
+
+## Example Output
+
 ![Screenshot](images/Screenshot%202026-05-06%20131522.png)
 ![Screenshot](images/Screenshot%202026-05-06%20131531.png)
 ![Screenshot](images/Screenshot%202026-05-06%20131538.png)
@@ -23,3 +83,12 @@ This year I stopped streaming music, and switched to using an MP3 player. I did 
 ![Screenshot](images/Screenshot%202026-05-06%20131618.png)
 ![Screenshot](images/Screenshot%202026-05-06%20131837.png)
 ![Screenshot](images/Screenshot%202026-05-06%20131912.png)
+
+---
+
+## Notes
+
+* This project is actively being developed and may have rough edges
+* Feedback and suggestions are welcome
+
+---
