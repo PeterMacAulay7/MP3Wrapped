@@ -4,8 +4,11 @@ import subprocess
 import string
 
 # === CONFIG ===
-DEST_RAW = r"C:\Users\peter\OneDrive\Desktop\My Stuff\wrapped\mp3-logs\raw"
-LOGUPDATE_SCRIPT = r"C:\Users\peter\OneDrive\Desktop\My Stuff\wrapped\mp3-logs\scripts\logupdate.py"
+from config_loader import RAW_DIR, PROJECT_ROOT
+
+DEST_RAW = RAW_DIR
+LOGUPDATE_SCRIPT = str(PROJECT_ROOT / "scripts" / "logupdate.py")
+
 
 def find_rockbox():
     for drive in string.ascii_uppercase:
@@ -30,7 +33,7 @@ def main():
     rockbox = find_rockbox()
 
     if not rockbox:
-        print("❌ Could not find .rockbox folder on any drive")
+        print("Could not find .rockbox folder on any drive")
         return
 
     print(f"✅ Found Rockbox at: {rockbox}")

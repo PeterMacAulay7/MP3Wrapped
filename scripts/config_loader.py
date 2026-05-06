@@ -21,8 +21,8 @@ def load_config():
 
     if not config_path.exists():
         print(
-            f"\n config.json not found at {config_path}\n"
-            f"    Copy {example_path} → config.json and fill in your paths.\n"
+            f"\n  config.json not found at {config_path}\n"
+            f"    Copy config.example.json → config.json and fill in your paths.\n"
         )
         sys.exit(1)
 
