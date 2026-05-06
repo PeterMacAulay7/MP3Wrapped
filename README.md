@@ -10,3 +10,10 @@ This year I stopped streaming music, and switched to using an MP3 player. I did 
 - Depending on where your actual music files are located, either edit the path for 'music' in the 'config.json' file, or put all your music into the music folder in the root of the MP3Wrapped folder.
 - Double click the MP3Wrapped.bat file and you should be all done.
 - The first time you run the program it will likely take a long time because it has to catalogue all your music, but subsequent times will run far, far faster. It skips the processing entirely, only double checking if new albums have been added.
+- When the program has finished running it will automatically open the newly generated wrapped.html file
+
+# Note
+- This project is still in development, so please let me know if there is anything wrong. I know that there are things to improve, but it's just me working on this so I definitely missed things
+
+# Example Wrapped
+![[Screenshot 2026-05-06 131522.png]]![[Screenshot 2026-05-06 131531.png]]![[Screenshot 2026-05-06 131538.png]]![[Screenshot 2026-05-06 131538.png]]![[Screenshot 2026-05-06 131552.png]]![[Screenshot 2026-05-06 131618.png]]![[Screenshot 2026-05-06 131837.png]]![[Screenshot 2026-05-06 131912.png]]
