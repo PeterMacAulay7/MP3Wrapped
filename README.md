@@ -16,4 +16,10 @@ This year I stopped streaming music, and switched to using an MP3 player. I did 
 - This project is still in development, so please let me know if there is anything wrong. I know that there are things to improve, but it's just me working on this so I definitely missed things
 
 # Example Wrapped
-![[/images/Screenshot 2026-05-06 131522.png]]![[/images/Screenshot 2026-05-06 131531.png]]![[/images/Screenshot 2026-05-06 131538.png]]![[/images/Screenshot 2026-05-06 131538.png]]![[/images/Screenshot 2026-05-06 131552.png]]![[/images/Screenshot 2026-05-06 131618.png]]![[/images/Screenshot 2026-05-06 131837.png]]![[/images/Screenshot 2026-05-06 131912.png]]
+![Screenshot](images/Screenshot%202026-05-06%20131522.png)
+![Screenshot](images/Screenshot%202026-05-06%20131531.png)
+![Screenshot](images/Screenshot%202026-05-06%20131538.png)
+![Screenshot](images/Screenshot%202026-05-06%20131552.png)
+![Screenshot](images/Screenshot%202026-05-06%20131618.png)
+![Screenshot](images/Screenshot%202026-05-06%20131837.png)
+![Screenshot](images/Screenshot%202026-05-06%20131912.png)
